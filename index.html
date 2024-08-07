@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="responsive_header_content">
+        <div class="responsive_header_logo">
+          <a
+            href="https://store.steampowered.com/?snr=1_4_4__global-responsive-menu"
+          >
+            <img
+              src="https://store.cloudflare.steamstatic.com/public/shared/images/responsive/header_logo.png"
+              height="36"
+              alt="STEAM"
+            />
+          </a>
+        </div>
+        <h3 id="displayTitle">Features</h3>
+        <div class="nav_links">
+          <li>Store</li>
+          <li>Community</li>
+          <li>About</li>
+          <li>Support</li>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="search_area">
+        <div id="store_search">
+          <form name="searchForm">
+            <div class="searchbox">
+              <input
+                id="searchForm"
+                name="searchForm"
+                type="text"
+                class="default"
+                placeholder="search"
+                size="22"
+                maxlength="64"
+              />
+              <div id="store_search_link">
+                <img
+                  src="https://store.cloudflare.steamstatic.com/public/images/blank.gif"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="category">
+            <ul class="categoryGroup" id="categoryGroup"></ul>
+          </div>
+          <div class="tags_area">
+            <h3>Tags</h3>
+            <ul id="tagGroup"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="showing_game" id="display">
+          <div class="game_wrapper">
+            <div class="cover" onclick="renderGameDetail(570)">
+              <img
+                src="https://steamcdn-a.akamaihd.net/steam/apps/570/header.jpg?t=1554408611"
+                data-id="570"
+              />
+              <div class="game_info">
+                <p>Dota 2</p>
+              </div>
+            </div>
+          </div>
+      </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
